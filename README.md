@@ -98,8 +98,6 @@ Return JSON data in the format below:
 
 If the `Power` exists, return JSON data in the format below:
 
-```
-
 {
 
   "id": 1,
@@ -110,13 +108,9 @@ If the `Power` exists, return JSON data in the format below:
 
 }
 
-```
-
 If the `Power` does not exist, return the following JSON data, along with
 
 the appropriate HTTP status code:
-
-```
 
 {
 
@@ -124,14 +118,11 @@ the appropriate HTTP status code:
 
 }
 
-```
 #### PATCH /powers/:id
 
 This route should update an existing `Power`. It should accept an object with
 
 the following properties in the body of the request:
-
-```
 
 {
 
@@ -139,13 +130,9 @@ the following properties in the body of the request:
 
 }
 
-```
-
 If the `Power` exists and is updated successfully (passes validations), update
 
 its description and return JSON data in the format below:
-
-```
 
 {
 
@@ -157,13 +144,9 @@ its description and return JSON data in the format below:
 
 }
 
-```
-
 If the `Power` does not exist, return the following JSON data, along with
 
 the appropriate HTTP status code:
-
-```
 
 {
 
@@ -171,22 +154,15 @@ the appropriate HTTP status code:
 
 }
 
-```
-
 If the `Power` is **not** updated successfully (does not pass validations),
 
 return the following JSON data, along with the appropriate HTTP status code:
-
-```
 
 {
 
   "errors": ["validation errors"]
 
 }
-
-```
-
 
 #### POST /hero_powers
 
@@ -195,8 +171,6 @@ This route creates a new `HeroPower` that is associated with an
 existing `Power` and `Hero`. It accepts an object with the following
 
 properties in the body of the request:
-
-```
 
 {
 
@@ -208,13 +182,9 @@ properties in the body of the request:
 
 }
 
-```
-
 If the `HeroPower` is created successfully, send back a response with the data
 
 related to the `Hero`:
-
-```
 
 {
 
@@ -250,21 +220,15 @@ related to the `Hero`:
 
 }
 
-```
-
 If the `HeroPower` is **not** created successfully, return the following
 
 JSON data, along with the appropriate HTTP status code:
-
-```
 
 {
 
   "errors": ["validation errors"]
 
 }
-
-```
 
 ### MIT License
 
