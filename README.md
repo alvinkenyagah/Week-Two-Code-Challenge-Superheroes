@@ -10,8 +10,8 @@ For this project, I'll be working on an API for tracking heroes and their superp
 ## Routes
 The following routes return JSON data in the format specified along with the appropriate HTTP verb.
 
- - GET /heroes 
-- GET /heroes/:id
+ - GET /heros 
+- GET /heros/:id
 - GET /powers
 - GET /powers/:id
 - PATCH /powers/:id
