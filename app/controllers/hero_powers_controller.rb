@@ -1,11 +1,6 @@
 class HeroPowersController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
   
-    # GET /hero_powers
-    def index
-      hero_powers = HeroPower.all
-      hero = Hero.all
-    end
   
     # POST /hero_powers
     def create
